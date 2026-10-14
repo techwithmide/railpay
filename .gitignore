@@ -1,0 +1,58 @@
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+*.env
+
+# ==========================================
+# Signer Security, Keys & Audit Logs
+# ==========================================
+signer-state.json
+signer-state.*.bak
+signer-audit.jsonl
+*.pem
+*.key
+*.seed
+
+# ==========================================
+# Compiled Go Binaries & Artifacts (Root)
+# ==========================================
+/arcpay
+/railpay-server
+/railpay-server-linux
+/signer
+/sweep
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+bin/
+dist/
+
+# ==========================================
+# Operating System & IDE Artifacts
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Logs & Scratch
+# ==========================================
+*.log
+tmp/
+temp/
