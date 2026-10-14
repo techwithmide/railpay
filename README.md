@@ -469,20 +469,7 @@ go test ./...
 
 The production/staging gateway runs as a systemd service (`railpay.service`) on the VPS.
 
-### Quick Deployment (One-Liner Script)
-From your local Mac terminal in this repository:
-```bash
-./deploy-vps.sh
-```
-This automated script will:
-1. Cross-compile the Go binary for Linux x86_64 (`GOOS=linux GOARCH=amd64`).
-2. Upload the binary to `/opt/railpay/railpay-server` via `scp`.
-3. Restart `railpay.service` on the VPS via `ssh`.
-4. Verify the `GET /healthz` health check endpoint.
-
----
-
-### Manual Deployment Steps
+### Deployment Steps
 
 #### Step 1: Cross-Compile on Mac for Linux AMD64
 Because macOS is Darwin (ARM64/Apple Silicon), you **must cross-compile** for the Linux x86_64 VPS architecture:
